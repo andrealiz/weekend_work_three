@@ -3,7 +3,11 @@
 # the first string, and false otherwise.
 
 def mutation?(base_word, mutation)
-
+  if base_word << mutation
+    return true
+  else
+    return false
+  end
 end
 
 # Driver code - don't touch anything below this line.
