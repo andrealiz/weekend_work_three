@@ -3,7 +3,18 @@
 # the first string, and false otherwise.
 
 def mutation?(base_word, mutation)
-  if base_word << mutation
+  first_word = base_word.split(//)
+  second_word = mutation.split(//)
+
+  word = []
+
+  second_word.each do |letter|
+    if first_word.include?(letter)
+      word << letter
+    end
+  end
+
+  if word.length == second_word.length
     return true
   else
     return false

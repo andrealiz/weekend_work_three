@@ -45,10 +45,10 @@ puts result
 puts "to:"
 puts result = 10
 
-if result == 5
-  puts "F"
-else
+if result != 5
   puts "PASS!"
+else
+  puts "F"
 end
 puts
 
